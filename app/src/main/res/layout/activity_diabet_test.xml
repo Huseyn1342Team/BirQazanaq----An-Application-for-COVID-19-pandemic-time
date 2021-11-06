@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/boz"
+    tools:context=".DiabetTest">
+
+    <RelativeLayout
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:id="@+id/netice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Sizin Diabet(Şəkər)olmaq ehtimalınız"
+                    android:textColor="#000"
+                    android:textSize="21sp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/netice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/netice1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="AZDIR"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/netice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/netice2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="Əgər simptomlarınızda dəyişiklik olarsa, bizim proqramda testi təkrarlayın."
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/netice3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="* Bizim proqramımızın əsas məqsədi təxmin etməkdir. Yəni sizdə xəstəliyin olub-olmaması haqqında məlumat verir. Bunlar sadəcə ehtimaldır, dəqiqləşdirmək üçün bəzi testlərdən keçməlisiniz."
+                    android:textColor="@color/boz"
+                    android:textSize="21sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/test2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:fillViewport="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Öz simptomlarınız haqqında qeyd edin."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/acliq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="193dp"
+                    android:layout_marginLeft="193dp"
+                    android:text="Daima aclıq hiss edirəm." />
+
+                <CheckBox
+                    android:id="@+id/susuz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/acliq"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="193dp"
+                    android:layout_marginLeft="193dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Çox su içirəm və hər zaman susuz hiss etmək." />
+
+                <CheckBox
+                    android:id="@+id/coxsidik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/susuz"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="193dp"
+                    android:layout_marginLeft="193dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Gün ərzində çox sidikə getmək." />
+
+                <CheckBox
+                    android:id="@+id/agiz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/coxsidik"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="193dp"
+                    android:layout_marginLeft="193dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ağız Quruluğu və ya susuzlaşmaq" />
+
+                <CheckBox
+                    android:id="@+id/cekiitkisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/agiz"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="193dp"
+                    android:layout_marginLeft="193dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Çəki itkisi." />
+
+                <CheckBox
+                    android:id="@+id/gecesidik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cekiitkisi"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="193dp"
+                    android:layout_marginLeft="193dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Gecə yarısı sidikə getmək üçün oyanmaq." />
+
+                <CheckBox
+                    android:id="@+id/azsidik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gecesidik"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="193dp"
+                    android:layout_marginLeft="193dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Çox az(bir və ya iki dəfə) sidikə getmək." />
+
+                <Button
+                    android:id="@+id/submit2"
+                    android:layout_width="180dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/azsidik"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/custom_button"
+                    android:text="Növbəti" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/test1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="İlk öncə öz xroniki xəstəliklərinizi qeyd edin."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/kidney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Xroniki Böyrək Xəstəliyi" />
+
+                    <CheckBox
+                        android:id="@+id/liver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kidney"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Xroniki Qaraciyər Xəstəliyi" />
+
+                    <CheckBox
+                        android:id="@+id/hearth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/liver"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Xroniki Ürək Xəstəliyi" />
+
+                    <CheckBox
+                        android:id="@+id/bloodcancer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hearth"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Qan Xərçəngi" />
+
+                    <CheckBox
+                        android:id="@+id/cancer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bloodcancer"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Xərçəng" />
+
+                    <CheckBox
+                        android:id="@+id/painkiller"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cancer"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Mütəmadi dərman qəbulu" />
+
+                    <CheckBox
+                        android:id="@+id/qanazligi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/painkiller"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Qan azlığı" />
+
+                    <CheckBox
+                        android:id="@+id/sidikinfeksiya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/qanazligi"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Sidik yollarının infeksiyası" />
+
+                    <CheckBox
+                        android:id="@+id/mesamesindromu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sidikinfeksiya"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Depresiya" />
+
+                    <CheckBox
+                        android:id="@+id/kidneystone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mesamesindromu"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Böyrək daşları" />
+
+                    <CheckBox
+                        android:id="@+id/hamilelik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kidneystone"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Hamiləlik" />
+
+                    <CheckBox
+                        android:id="@+id/tumor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hamilelik"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Bədxassəli şiş" />
+
+                    <CheckBox
+                        android:id="@+id/derixestelikleri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tumor"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Dəri xəstəlikləri" />
+
+                    <CheckBox
+                        android:id="@+id/esebxes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/derixestelikleri"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Əsəb xəstəlikləri" />
+
+                    <CheckBox
+                        android:id="@+id/psixiatrik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/esebxes"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Psixiatrik xəstəliklər" />
+
+                    <CheckBox
+                        android:id="@+id/alergiya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/psixiatrik"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Allergiya" />
+
+                    <CheckBox
+                        android:id="@+id/migren"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/alergiya"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Əzələ zədələri" />
+
+                    <CheckBox
+                        android:id="@+id/goz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/migren"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Ağciyər xəstəlikləri" />
+
+                    <CheckBox
+                        android:id="@+id/dental"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/goz"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Sinir sistemi xəstəlikləri." />
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="180dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/dental"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/custom_button"
+                        android:text="Növbəti" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/test3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="Son 7 gündür etdikləriniz."
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/saralmaq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Bədənimin rənginin saraldığını hiss edirəm." />
+
+                    <CheckBox
+                        android:id="@+id/nosleep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/saralmaq"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Çox az yuxu qəbul etmişəm ." />
+
+                    <CheckBox
+                        android:id="@+id/karbohidrat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nosleep"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Çox karbohidrat qəbul etmişəm ." />
+
+                    <CheckBox
+                        android:id="@+id/nowater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/karbohidrat"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Kifayət qədər su içmirəm." />
+
+                    <CheckBox
+                        android:id="@+id/practice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nowater"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Çoxlu sidikə gedirəm." />
+
+                    <CheckBox
+                        android:id="@+id/alkoqol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/practice"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Çoxlu alkoqol qəbul etmişəm." />
+
+                    <CheckBox
+                        android:id="@+id/stres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/alkoqol"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Çoxlu stress yaşamışam." />
+
+                    <CheckBox
+                        android:id="@+id/coxsuic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stres"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Çoxlu su qəbul etmişəm." />
+
+                    <CheckBox
+                        android:id="@+id/sidikqovucu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/coxsuic"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Sidikqovucu dərmanlar qəbul etmişəm." />
+
+                    <CheckBox
+                        android:id="@+id/gozdamci"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sidikqovucu"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="193dp"
+                        android:layout_marginLeft="193dp"
+                        android:text="Yorğunluq" />
+
+                    <Button
+                        android:id="@+id/submit3"
+                        android:layout_width="180dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/gozdamci"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custom_button"
+                        android:text="Növbəti" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

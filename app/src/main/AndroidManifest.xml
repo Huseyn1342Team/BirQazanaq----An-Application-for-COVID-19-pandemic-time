@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.updownteam.birqazanaq">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/loqo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/loqo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DiabetTest"></activity>
+        <activity android:name=".TestChooser" />
+        <activity
+            android:name=".Profil2"
+            android:label="@string/title_activity_profil2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Kate_1" />
+        <activity
+            android:name=".Statistics_2"
+            android:label="@string/title_activity_statistics_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1659692064472439~1763347817" />
+
+        <activity android:name=".ChooseAnalyze_4" />
+        <activity android:name=".ChooseAnalyze_3" />
+        <activity android:name=".ChooseAnalyze_2" />
+        <activity android:name=".ProfilPhoto" />
+        <activity android:name=".Statistics" />
+        <activity android:name=".TopRating" />
+        <activity android:name=".Kateqoriya_3" />
+        <activity android:name=".Kateqoriya_2" />
+        <activity
+            android:name=".Kateqoriya_1"
+            android:label="@string/title_activity_kateqoriya_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".News_3" />
+        <activity android:name=".News_2" />
+        <activity android:name=".News1" />
+        <activity android:name=".RespirationResult" />
+        <activity android:name=".Respiration_1" />
+        <activity android:name=".Saturation_result" />
+        <activity android:name=".Saturation_1" />
+        <activity android:name=".Protect_activity_2" />
+        <activity android:name=".HearthRateResult" />
+        <activity android:name=".HearthRate_1" />
+        <activity android:name=".ChooseAnalyze" />
+        <activity
+            android:name=".AnaliziSec"
+            android:label="@string/title_activity_analizi_sec"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MelumatCorona"
+            android:label="@string/title_activity_melumat_corona"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Category_1"
+            android:label="@string/title_activity_category_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Register" />
+        <activity android:name=".Sign_in" />
+        <activity
+            android:name=".InfoAboutCoronaVirus"
+            android:label="@string/title_activity_info_about_corona_virus"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".BloodPressure_result" />
+        <activity android:name=".Activity_1_BloodPressure" />
+        <activity android:name=".Protect_activity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BirQazanaq</string>
+    <string name="hello_world">Jorgesys!</string>
+    <string name="action_settings">Settings</string>
+    <string name="celsius">&#176;C</string>
+    <string name="title_activity_info_about_corona_virus">InfoAboutCoronaVirus</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    //app -ca-app-pub-1659692064472439~1763347817 //ad-ca-app-pub-1659692064472439/9398101734
+    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="title_activity_category_1">Category_1</string>
+    <string name="title_activity_melumat_corona">MelumatCorona</string>
+    <string name="title_activity_analizi_sec">AnaliziSec</string>
+    <string name="title_activity_kateqoriya_1">Kateqoriya_1</string>
+    <string name="title_activity_statistics_2">Statistics_2</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_profil2">Profil2</string>
+</resources>

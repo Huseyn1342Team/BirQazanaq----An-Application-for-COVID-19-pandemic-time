@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "153585708215",
+    "firebase_url": "https://birqazanaq-2f4f7.firebaseio.com",
+    "project_id": "birqazanaq-2f4f7",
+    "storage_bucket": "birqazanaq-2f4f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153585708215:android:0b8f9028582b2aed34b132",
+        "android_client_info": {
+          "package_name": "com.updownteam.birqazanaq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153585708215-d4tl1srqffe40i4olgvvlqhm6qvaulh4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.updownteam.birqazanaq",
+            "certificate_hash": "0e649f91aa182857ed2cfc243d4b4a0cf99921f3"
+          }
+        },
+        {
+          "client_id": "153585708215-nndfcjf9cvcru0a8saf1q8n89jkrm34f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.updownteam.birqazanaq",
+            "certificate_hash": "aa8dcfadfc40f7c45afdb631357fe35cad54a11a"
+          }
+        },
+        {
+          "client_id": "153585708215-ku6ifbs7uas4591pf260dalvsf3e9elr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7PSQeV2_GQzQ5fARMB8Fl9N4_xK6p0EU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153585708215-ku6ifbs7uas4591pf260dalvsf3e9elr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

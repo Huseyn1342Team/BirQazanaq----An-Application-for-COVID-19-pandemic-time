@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".ChooseAnalyze_3">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:id="@+id/title1"
+        android:text="Şikayətlərin"
+        android:textColor="@android:color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/boz"
+            android:layout_below="@id/title1"
+            android:id="@+id/line1"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:layout_below="@id/line1"
+            android:id="@+id/text1"
+            android:layout_marginLeft="23dp"
+            android:text="Burdakı hansı simptomları özünüzdə hiss edirsiniz?"/>
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/text1"
+            android:id="@+id/yesheadache"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni başlayan baş ağrısı" />
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/yesheadache"
+            android:id="@+id/yesfever1"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni başlayan asqırıq" />
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/yesfever1"
+            android:id="@+id/yesfever2"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Şiddətli qızdırma(37-dən yüksək)" />
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/yesfever2"
+            android:id="@+id/yescough"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni başlayan quru öksürək" />
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/yescough"
+            android:id="@+id/yesrespiration"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni başlayan tənginəfəslik" />
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/yesrespiration"
+            android:id="@+id/yesthroat"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni başlayan boğaz ağrısı" />
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/yesthroat"
+            android:id="@+id/yesurine"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Yeni başlayan İshal" />
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/yesurine"
+            android:id="@+id/yespain"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni başlayan bədən ağrıları" />
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/yespain"
+            android:id="@+id/yesfatigue"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni başlayan halsızlıq" />
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/yesfatigue"
+            android:id="@+id/yesnose"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni başlayan burun axıntısı" />
+        <CheckBox
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/yesnose"
+        android:id="@+id/yesoxygen"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yeni başlayan nəfəs darlığı" />
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/yesoxygen"
+            android:id="@+id/yeschest"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni başlayan sinə sıxışması" />
+
+        <CheckBox
+            android:id="@+id/yesmede"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yeschest"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Yeni başlayan mədə bulantısı" />
+        <CheckBox
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/yesmede"
+            android:id="@+id/yeskusma"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni başlayan qaytarma" />
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@color/colorPrimary"
+            android:text="Növbəti"
+            android:textColor="@android:color/white"
+            android:id="@+id/submit"
+            android:layout_below="@id/yeskusma"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+        <com.google.android.gms.ads.AdView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner"
+            android:id="@+id/ad1"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true">
+        </com.google.android.gms.ads.AdView>
+        <com.google.android.gms.ads.AdView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner"
+            android:layout_below="@id/ad1"
+            android:id="@+id/ad2"
+            android:layout_centerHorizontal="true">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</ScrollView>

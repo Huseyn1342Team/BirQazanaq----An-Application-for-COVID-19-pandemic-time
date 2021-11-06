@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_protection"
+            android:icon="@drawable/coronamelumat"
+            android:title="Koronadan qorun"/>
+        <item
+            android:id="@+id/nav_eats"
+            android:icon="@drawable/ic_free_breakfast_black_24dp"
+            android:title="Günün yeməkləri" />
+        <item
+            android:id="@+id/nav_films"
+            android:icon="@drawable/dayfilm"
+            android:title="Günün filmləri" />
+        <item
+            android:id="@+id/nav_books"
+            android:icon="@drawable/daybook"
+            android:title="Günün kitabları" />
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/daystatistics"
+            android:title="Günün statistikası" />
+        <item
+            android:id="@+id/nav_game"
+            android:icon="@drawable/daygame"
+            android:title="Günün oyunları" />
+        <item
+            android:id="@+id/nav_programming"
+            android:icon="@drawable/dayprogramming"
+            android:title="Proqramlaşdırma tapşırıqları" />
+        <item
+            android:id="@+id/nav_language"
+            android:icon="@drawable/daylanguage"
+            android:title="Dil örgən" />
+        <item
+            android:id="@+id/nav_photo"
+            android:icon="@drawable/profil"
+            android:title="Profil Şəklini dəyiş" />
+        <item
+            android:id="@+id/nav_log"
+            android:icon="@drawable/logout"
+            android:title="Çıxış" />
+    </group>
+</menu>

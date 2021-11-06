@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    android:background="@mipmap/bg4"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Protect_activity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="156dp"
+        app:srcCompat="@mipmap/rsz_download" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_weight="0.14" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.87"
+        android:fontFamily="casual"
+        android:text="-  Öz sag baş barmağınızı\n  kameraya qoyun.\n- Əmin olun ki, barmağınız\n   kameranı tam bağlayıb. \n- Kölgə olan yerdə analiz edin. \n- Əlinizi ölçmə quratarana \n   qədər çəkməyin. \n- Nəhayət, düyməyə basın və başlayın . "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.17" />
+
+    <Button
+        android:layout_height="35dp"
+        android:id="@+id/StartVS"
+        android:layout_width="195dp"
+        android:background="@drawable/custom_button"
+        android:text="Başla"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

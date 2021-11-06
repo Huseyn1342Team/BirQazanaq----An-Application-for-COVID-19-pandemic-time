@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kate_1">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/card1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="155dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="155dp"
+                android:background="@drawable/loqo"/>
+            <TextView
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:text="Siz uğurla yarışmaya qatıldınız nəticəniz İnstagram hesabımızda paylaşılacaq."/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_button"
+        android:layout_below="@id/card1"
+        android:text="Əsas səhifəyə get"
+        android:id="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_button"
+        android:layout_below="@id/submit"
+        android:text="İnstaqram hesabımıza gedin"
+        android:id="@+id/instagram"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
